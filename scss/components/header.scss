@@ -2,9 +2,7 @@
 /*                  HEADER                */
 /*****************************************/
 header {
-  @include bp(small) {
-    background-color: $cl-purple;
-  }
+  background-color: $cl-purple;
   &.navbar {
     // background-color: $cl-white;
     .navbar-brand {

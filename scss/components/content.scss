@@ -2,6 +2,7 @@
 /*                CONTENT                 */
 /*****************************************/
 main {
+  padding-top: 70px;
   &.home {
     section {
       &.intro {
@@ -9,12 +10,12 @@ main {
         background-color: $cl-purple;
         background-image: url("../images/cover-purple.png");
         background-position: center;
-        background-size: cover;
+        background-size: 96%;
         background-repeat: no-repeat;
       }
       &.search {
         margin-top: -80px;
-        z-index: $max-z-index;
+        // z-index: $max-z-index;
       }
     }
   }
