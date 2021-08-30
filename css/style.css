@@ -152,19 +152,14 @@ header {
 /*******************************************/
 /*                CONTENT                 */
 /*****************************************/
-main {
-  padding-top: 70px; }
-  main.home section.intro {
-    height: 45vh;
-    background-color: #8181e5;
-    background-image: url("../images/cover-purple.png");
-    background-position: center;
-    background-size: 96%;
-    background-repeat: no-repeat; }
-    @media (max-width: 992px) {
-      main.home section.intro {
-        background-size: cover; } }
-  main.home section.search {
-    margin-top: -80px; }
+main.home section.intro {
+  height: 45vh;
+  background-color: #8181e5;
+  background-image: url("../images/cover-purple.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+main.home section.search {
+  margin-top: -80px; }
 
 /*# sourceMappingURL=style.css.map */

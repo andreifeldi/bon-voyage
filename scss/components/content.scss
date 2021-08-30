@@ -2,7 +2,6 @@
 /*                CONTENT                 */
 /*****************************************/
 main {
-  padding-top: 70px;
   &.home {
     section {
       &.intro {
@@ -10,11 +9,8 @@ main {
         background-color: $cl-purple;
         background-image: url("../images/cover-purple.png");
         background-position: center;
-        background-size: 96%;
+        background-size: cover;
         background-repeat: no-repeat;
-        @include bp(medium) {
-          background-size: cover;
-        }
       }
       &.search {
         margin-top: -80px;
