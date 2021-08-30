@@ -41,7 +41,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 36px;
   font-family: "Lexend", sans-serif;
   font-weight: 600;
-  color: #34297a; }
+  color: #34297a;
+  line-height: 1.75; }
 
 h2 {
   font-size: 28px; }
@@ -83,6 +84,12 @@ a {
     background-color: #34297a; }
   .btn.btn-link {
     background-color: transparent; }
+  .btn.btn-outline-primary {
+    color: #fa6b6b;
+    border: 2px solid #fa6b6b; }
+    .btn.btn-outline-primary:hover, .btn.btn-outline-primary:focus, .btn.btn-outline-primary:active {
+      color: #ffffff;
+      background-color: #fa6b6b; }
 
 .cl-black {
   color: #34297a; }
@@ -161,5 +168,15 @@ main.home {
     background-repeat: no-repeat; }
   main.home section.search {
     margin-top: -80px; }
+  main.home section.info .width {
+    width: 50%;
+    margin: 0 auto; }
+    @media (max-width: 992px) {
+      main.home section.info .width {
+        width: 100%; } }
+
+footer a,
+footer span {
+  color: #34297a; }
 
 /*# sourceMappingURL=style.css.map */
