@@ -161,7 +161,7 @@ main {
     background-position: center;
     background-size: 96%;
     background-repeat: no-repeat; }
-    @media (max-width: 767px) {
+    @media (max-width: 992px) {
       main.home section.intro {
         background-size: cover; } }
   main.home section.search {
