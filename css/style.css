@@ -1,0 +1,167 @@
+/*******************************************/
+/*              VARIABLES                 */
+/*****************************************/
+/*******************************************/
+/*                 FONTS                  */
+/*****************************************/
+/*******************************************/
+/*                 SIZE                   */
+/*****************************************/
+/*******************************************/
+/*                Z-INDEX                 */
+/*****************************************/
+/*******************************************/
+/*                 MIXINS                 */
+/*****************************************/
+/*FONT SIZE*/
+/*******************************************/
+/*               RESPONSIVE               */
+/*****************************************/
+/*@include bp(small) {
+}*/
+/*@media (max-width:767px) {
+    
+}*/
+/*******************************************/
+/*            FONTS & TYPOGRAPHY          */
+/*****************************************/
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/*******************************************/
+/*                  BASE                  */
+/*****************************************/
+body {
+  font-family: "Lexend", sans-serif;
+  color: #34297a;
+  font-size: 15px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: rgba(129, 129, 229, 0.1); }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 36px;
+  font-family: "Lexend", sans-serif;
+  font-weight: 600;
+  color: #34297a; }
+
+h2 {
+  font-size: 28px; }
+
+h3 {
+  font-size: 24px; }
+
+h4 {
+  font-size: 20px; }
+
+h5 {
+  font-size: 18px; }
+
+h6 {
+  font-size: 16px; }
+
+p {
+  line-height: 1.75;
+  font-size: 15px;
+  color: #505e7b; }
+
+a {
+  text-decoration: none;
+  font-size: 15px; }
+
+.btn {
+  line-height: 1.75;
+  font-size: 15px;
+  font-family: "Lexend", sans-serif;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px; }
+  .btn.btn-lg {
+    padding: 15px 25px; }
+  .btn.btn-light {
+    background-color: #ffffff; }
+  .btn.btn-dark {
+    background-color: #34297a; }
+  .btn.btn-link {
+    background-color: transparent; }
+
+.cl-black {
+  color: #34297a; }
+
+.cl-white {
+  color: #ffffff; }
+
+.cl-purple {
+  color: #8181e5; }
+
+.cl-red {
+  color: #fa6b6b; }
+
+.bg-black {
+  background-color: #34297a; }
+
+.bg-white {
+  background-color: #ffffff; }
+
+.bg-purple {
+  background-color: #8181e5; }
+
+.bg-red {
+  background-color: #fa6b6b; }
+
+.rounded {
+  border-radius: 6px !important; }
+
+.shadow {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important; }
+
+.input-group-text {
+  background-color: rgba(129, 129, 229, 0.1); }
+  .input-group-text .material-icons {
+    color: rgba(129, 129, 229, 0.4); }
+
+@media (min-width: 768px) {
+  .row.equal {
+    display: flex;
+    flex-wrap: wrap; } }
+/* add this for full height column content
+.equal > div[class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+*/
+/*******************************************/
+/*                  HEADER                */
+/*****************************************/
+@media (max-width: 767px) {
+  header {
+    background-color: #8181e5; } }
+header.navbar .navbar-brand img {
+  width: auto;
+  height: 30px; }
+header.navbar .navbar-toggler {
+  color: #ffffff; }
+header.navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: #ffffff;
+  font-weight: 600; }
+  header.navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+    color: #fa6b6b; }
+  header.navbar .navbar-collapse .navbar-nav .nav-item .nav-link.btn {
+    color: #ffffff;
+    padding: 10px 20px;
+    background-color: #fa6b6b; }
+
+/*******************************************/
+/*                CONTENT                 */
+/*****************************************/
+main.home section.intro {
+  height: 45vh;
+  background-color: #8181e5;
+  background-image: url("../images/cover-purple.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+main.home section.search {
+  margin-top: -80px;
+  z-index: 2147483647; }
+
+/*# sourceMappingURL=style.css.map */

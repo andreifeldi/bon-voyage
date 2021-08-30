@@ -1,0 +1,160 @@
+/*******************************************/
+/*                  BASE                  */
+/*****************************************/
+body {
+  font-family: $font-primary;
+  color: $cl-black;
+  font-size: 15px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: rgba($cl-purple, 0.1);
+}
+
+h1 {
+  font-size: 36px;
+  font-family: $font-primary;
+  font-weight: 600;
+  color: $cl-black;
+}
+
+h2 {
+  font-size: 28px;
+  @extend h1;
+}
+
+h3 {
+  font-size: 24px;
+  @extend h1;
+}
+
+h4 {
+  font-size: 20px;
+  @extend h1;
+}
+
+h5 {
+  font-size: 18px;
+  @extend h1;
+}
+
+h6 {
+  font-size: 16px;
+  @extend h1;
+}
+
+p {
+  line-height: 1.75;
+  font-size: 15px;
+  color: $cl-text;
+}
+
+a {
+  text-decoration: none;
+  font-size: 15px;
+  // color: $cl-purple;
+
+  &:hover,
+  &:focus,
+  &:active {
+    // color: $cl-red;
+  }
+}
+
+.btn {
+  line-height: 1.75;
+  font-size: 15px;
+  font-family: $font-primary;
+  @include border-radius(4px);
+
+  &.btn-lg {
+    padding: $size15 $size25;
+  }
+  &.btn-primary {
+  }
+
+  &.btn-secondary {
+  }
+
+  &.btn-success {
+  }
+
+  &.btn-danger {
+  }
+
+  &.btn-warning {
+  }
+
+  &.btn-info {
+  }
+
+  &.btn-light {
+    background-color: $cl-white;
+  }
+
+  &.btn-dark {
+    background-color: $cl-black;
+  }
+
+  &.btn-link {
+    background-color: transparent;
+  }
+}
+.cl-black {
+  color: $cl-black;
+}
+
+.cl-white {
+  color: $cl-white;
+}
+
+.cl-purple {
+  color: $cl-purple;
+}
+
+.cl-red {
+  color: $cl-red;
+}
+
+.bg-black {
+  background-color: $cl-black;
+}
+
+.bg-white {
+  background-color: $cl-white;
+}
+
+.bg-purple {
+  background-color: $cl-purple;
+}
+
+.bg-red {
+  background-color: $cl-red;
+}
+
+.rounded {
+  border-radius: 6px !important;
+}
+
+.shadow {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
+}
+.input-group-text {
+  background-color: rgba($cl-purple, 0.1);
+  .material-icons {
+    color: rgba($cl-purple, 0.4);
+  }
+}
+
+@media (min-width: 768px) {
+  .row.equal {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/* add this for full height column content
+.equal > div[class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+*/

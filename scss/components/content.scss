@@ -1,0 +1,23 @@
+/*******************************************/
+/*                CONTENT                 */
+/*****************************************/
+main {
+  &.home {
+    section {
+      &.intro {
+        height: 45vh;
+        background-color: $cl-purple;
+        background-image: url("../images/cover-purple.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      &.search {
+        margin-top: -80px;
+        z-index: $max-z-index;
+      }
+    }
+  }
+}
+@include bp(small) {
+}

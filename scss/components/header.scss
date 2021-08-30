@@ -1,0 +1,41 @@
+/*******************************************/
+/*                  HEADER                */
+/*****************************************/
+header {
+  @include bp(small) {
+    background-color: $cl-purple;
+  }
+  &.navbar {
+    // background-color: $cl-white;
+    .navbar-brand {
+      img {
+        width: auto;
+        height: $size30;
+      }
+    }
+
+    .navbar-toggler {
+      color: $cl-white;
+    }
+
+    .navbar-collapse {
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            color: $cl-white;
+            font-weight: 600;
+
+            &:hover {
+              color: $cl-red;
+            }
+            &.btn {
+              color: $cl-white;
+              padding: $size10 $size20;
+              background-color: $cl-red;
+            }
+          }
+        }
+      }
+    }
+  }
+}
