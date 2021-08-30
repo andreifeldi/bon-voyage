@@ -12,6 +12,9 @@ main {
         background-position: center;
         background-size: 96%;
         background-repeat: no-repeat;
+        @include bp(small) {
+          background-size: cover;
+        }
       }
       &.search {
         margin-top: -80px;
