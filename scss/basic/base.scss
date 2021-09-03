@@ -1,168 +1,192 @@
 /*******************************************/
 /*                  BASE                  */
 /*****************************************/
+
 body {
-  font-family: $font-primary;
-  color: $cl-black;
-  font-size: 15px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  background-color: rgba($cl-purple, 0.1);
+    font-family: $font-primary;
+    color: $cl-black;
+    font-size: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgba($cl-purple, 0.1);
 }
 
 h1 {
-  font-size: 36px;
-  font-family: $font-primary;
-  font-weight: 600;
-  color: $cl-black;
-  line-height: 1.75;
+    font-size: 36px;
+    font-family: $font-primary;
+    font-weight: 600;
+    color: $cl-black;
+    line-height: 1.75;
 }
 
 h2 {
-  font-size: 28px;
-  @extend h1;
+    font-size: 28px;
+    @extend h1;
 }
 
 h3 {
-  font-size: 24px;
-  @extend h1;
+    font-size: 24px;
+    @extend h1;
 }
 
 h4 {
-  font-size: 20px;
-  @extend h1;
+    font-size: 20px;
+    @extend h1;
 }
 
 h5 {
-  font-size: 18px;
-  @extend h1;
+    font-size: 18px;
+    @extend h1;
 }
 
 h6 {
-  font-size: 16px;
-  @extend h1;
+    font-size: 16px;
+    @extend h1;
 }
 
 p {
-  line-height: 1.75;
-  font-size: 15px;
-  color: $cl-text;
+    line-height: 1.75;
+    font-size: 15px;
+    color: $cl-text;
+}
+
+.small {
+    font-size: 13px;
 }
 
 a {
-  text-decoration: none;
-  font-size: 15px;
-  // color: $cl-purple;
-
-  &:hover,
-  &:focus,
-  &:active {
-    // color: $cl-red;
-  }
+    text-decoration: none;
+    font-size: 15px;
+    // color: $cl-purple;
+    &:active,
+    &:focus,
+    &:hover {
+        // color: $cl-red;
+    }
 }
 
 .btn {
-  line-height: 1.75;
-  font-size: 15px;
-  font-family: $font-primary;
-  @include border-radius(4px);
+    line-height: 1.75;
+    font-size: 15px;
+    font-family: $font-primary;
+    @include border-radius(4px);
 
-  &.btn-lg {
-    padding: $size15 $size25;
-  }
-  &.btn-primary {
-  }
-
-  &.btn-secondary {
-  }
-
-  &.btn-success {
-  }
-
-  &.btn-danger {
-  }
-
-  &.btn-warning {
-  }
-
-  &.btn-info {
-  }
-
-  &.btn-light {
-    background-color: $cl-white;
-  }
-
-  &.btn-dark {
-    background-color: $cl-black;
-  }
-
-  &.btn-link {
-    background-color: transparent;
-  }
-  &.btn-outline-primary {
-    color: $cl-red;
-    border: 2px solid $cl-red;
-    &:hover,
-    &:focus,
-    &:active {
-      color: $cl-white;
-      background-color: $cl-red;
+    &:focus {
+        box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px !important;
     }
-  }
+
+    &:active,
+    &:focus,
+    &:hover {
+        color: $cl-white;
+    }
+
+    &.btn-lg {
+        padding: $size15 $size25;
+    }
+
+    &.btn-primary {}
+
+    &.btn-secondary {}
+
+    &.btn-success {}
+
+    &.btn-danger {}
+
+    &.btn-warning {}
+
+    &.btn-info {}
+
+    &.btn-light {
+        background-color: $cl-white;
+    }
+
+    &.btn-dark {
+        background-color: $cl-black;
+    }
+
+    &.btn-link {
+        background-color: transparent;
+    }
+
+    &.btn-outline-primary {
+        color: $cl-red;
+        border: 2px solid $cl-red;
+
+        &:active,
+        &:focus,
+        &:hover {
+            color: $cl-white;
+            background-color: $cl-red;
+        }
+    }
 }
+
 .cl-black {
-  color: $cl-black;
+    color: $cl-black;
 }
 
 .cl-white {
-  color: $cl-white;
+    color: $cl-white;
 }
 
 .cl-purple {
-  color: $cl-purple;
+    color: $cl-purple;
 }
 
 .cl-red {
-  color: $cl-red;
+    color: $cl-red;
+}
+
+.cl-green {
+    color: $cl-green;
+}
+
+.cl-text {
+    color: $cl-text;
 }
 
 .bg-black {
-  background-color: $cl-black;
+    background-color: $cl-black;
 }
 
 .bg-white {
-  background-color: $cl-white;
+    background-color: $cl-white;
 }
 
 .bg-purple {
-  background-color: $cl-purple;
+    background-color: $cl-purple;
 }
 
 .bg-red {
-  background-color: $cl-red;
+    background-color: $cl-red;
+}
+
+.bg-green {
+    background-color: $cl-green;
 }
 
 .rounded {
-  border-radius: 6px !important;
+    border-radius: 6px !important;
 }
 
 .shadow {
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
+    box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px !important;
 }
+
 .input-group-text {
-  background-color: rgba($cl-purple, 0.1);
-  .material-icons {
-    color: rgba($cl-purple, 0.4);
-  }
-}
+    background-color: rgba($cl-purple, 0.1);
 
+    .material-icons {
+        color: rgba($cl-purple, 0.4);
+    }
+}
 @media (min-width: 768px) {
-  .row.equal {
-    display: flex;
-    flex-wrap: wrap;
-  }
+    .row.equal {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
-
 /* add this for full height column content
 .equal > div[class*='col-'] {
   display: flex;

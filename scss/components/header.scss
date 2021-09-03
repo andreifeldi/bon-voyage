@@ -2,38 +2,60 @@
 /*                  HEADER                */
 /*****************************************/
 header {
-  // background-color: $cl-purple;
-  &.navbar {
-    // background-color: $cl-white;
-    .navbar-brand {
-      img {
-        width: auto;
-        height: $size30;
-      }
+    @include bp(small) {
+        background-color: $cl-purple;
     }
 
-    .navbar-toggler {
-      color: $cl-white;
-    }
-
-    .navbar-collapse {
-      .navbar-nav {
-        .nav-item {
-          .nav-link {
-            color: $cl-white;
-            font-weight: 600;
-
-            &:hover {
-              color: $cl-red;
+    &.navbar {
+        .navbar-brand {
+            img {
+                width: auto;
+                height: $size30;
             }
-            &.btn {
-              color: $cl-white;
-              padding: $size10 $size20;
-              background-color: $cl-red;
-            }
-          }
         }
-      }
+
+        .navbar-toggler {
+            color: $cl-white;
+        }
+
+        .navbar-collapse {
+            .navbar-nav {
+                .nav-item {
+                    .nav-link {
+                        color: $cl-white;
+                        font-weight: 600;
+
+                        &:hover {
+                            color: $cl-red;
+                        }
+
+                        &.btn {
+                            color: $cl-white;
+                            padding: $size10 $size20;
+                            background-color: $cl-red;
+                        }
+
+                        &.cart-trigger {
+                            .bullet {
+                                top: 0;
+                                right: 0;
+                                padding: 0 7px;
+                                @include border-radius(100px);
+                                @include bp(small) {
+                                    top: $size5;
+                                    right: -10px;
+                                }
+                            }
+                            @include bp(small) {
+                                width: $size40;
+                                position: absolute !important;
+                                top: 0;
+                                right: 70px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
-  }
 }

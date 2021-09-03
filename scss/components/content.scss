@@ -2,24 +2,64 @@
 /*                CONTENT                 */
 /*****************************************/
 main {
-  &.home {
     margin-top: -70px;
+
     section {
-      &.intro {
-        height: 45vh;
-        background-color: $cl-purple;
-        background-image: url("../images/cover-purple.png");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-      }
-      &.search {
-        margin-top: -80px;
-      }
-      &.newsletter {
-      }
+        &.intro {
+            height: 25vh;
+            background-color: $cl-purple;
+            background-image: url("../images/cover-purple.png");
+            background-position: bottom 5% center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &.search {
+            margin-top: -80px;
+        }
     }
-  }
+
+    &.home {
+        section {
+            &.intro {
+                height: 45vh;
+            }
+
+            &.info {
+                .h-100 {
+                    @include bp(small) {
+                        height: auto !important;
+                    }
+                }
+            }
+
+            &.share {}
+
+            &.clients {}
+        }
+    }
+
+    &.results {
+        section {
+            &.results-list {}
+        }
+    }
+
+    &.cart {}
 }
-@include bp(small) {
+
+.nav {
+    &.nav-pills {
+        .nav-item {
+            .nav-link {
+                color: $cl-text;
+
+                &.active {
+                    color: $cl-white;
+                    background-color: $cl-purple;
+                }
+            }
+        }
+    }
 }
+@include bp(small) {}

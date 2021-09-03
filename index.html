@@ -4,7 +4,7 @@
 <head>
     <title tkey="page-main-title">Bon Voyage</title>
     <meta charset="UTF-8">
-    <meta name="description" content="Cazări autentice și experiențe românești">
+    <meta name="description" content="Caută, rezervă, bucură-te de călătorie.">
     <meta name="keywords" content="HTML, CSS, XML, JavaScript">
     <meta name="author" content="Bon Voyage">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -19,8 +19,8 @@
 
 <body>
     <header class="navbar navbar-expand-md navbar-light">
-        <nav class="container-xxl flex-wrap flex-md-nowrap p-0" aria-label="Main navigation">
-            <a class="navbar-brand mx-2" href="index.html" aria-label="Bootstrap">
+        <nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation">
+            <a class="navbar-brand mx-2 mx-sm-0" href="index.html" aria-label="Bootstrap">
                 <img src="./images/logo-white.svg" alt="Bon Voyage" />
             </a>
 
@@ -33,19 +33,20 @@
             <div class="collapse navbar-collapse" id="bdNavbar">
                 <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0"></ul>
 
-                <ul class="navbar-nav d-flex align-items-center flex-row flex-wrap ms-md-auto bg-purple p-3 p-sm-0">
+                <ul class="navbar-nav d-flex align-items-center flex-row flex-wrap ms-md-auto p-3 p-sm-0">
                     <li class="nav-item col-12 col-md-auto">
                         <a class="nav-link p-3 active" href="index.html">Cauta bilet</a>
                     </li>
                     <li class="nav-item col-12 col-md-auto">
-                        <a class="nav-link p-3" href="index.html">Bilete tale</a>
+                        <a class="nav-link p-3" href="">Bilete tale</a>
                     </li>
                     <li class="nav-item col-12 col-md-auto">
-                        <a class="nav-link mx-3 btn" href="index.html">Autentificare</a>
+                        <a class="nav-link mx-3 btn" href="">Autentificare</a>
                     </li>
                     <li class="nav-item col-12 col-md-auto">
-                        <a class="nav-link p-2 d-flex align-items-center language" href="index.html">
-                            <span class="material-icons material-icons-outlined">language</span>RO<span>
+                        <a href="cos.html" class="nav-link p-3 d-flex align-items-center position-relative cart-trigger">
+                            <span class="material-icons material-icons-outlined cl-white">shopping_cart</span>
+                            <span class="bullet cl-white bg-red position-absolute">3</span>
                         </a>
                     </li>
                 </ul>
@@ -59,6 +60,7 @@
                 <h1 class="cl-white my-5">Caută, rezervă, bucură-te de călătorie.</h1>
             </div>
         </section>
+
         <section class="d-flex align-items-center mx-3 mb-3 search">
             <div class="container flex-wrap flex-md-nowrap p-4 rounded shadow bg-white">
                 <div class="row">
@@ -86,50 +88,118 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-md-3 my-2">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 my-2">
                         <div class="input-group mb-3">
                             <span class="input-group-text py-2" id="basic-addon1"><span class="material-icons cl-purple">location_on</span></span>
                             <input type="text" class="form-control py-2" placeholder="Plecare" aria-label="Plecare" aria-describedby="basic-addon1">
                         </div>
                     </div>
-                    <div class="col-12 col-md-3 my-2">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 my-2">
                         <div class="input-group mb-3">
                             <span class="input-group-text py-2" id="basic-addon1"><span class="material-icons cl-purple">pin_drop</span></span>
                             <input type="text" class="form-control py-2" placeholder="Destinatie" aria-label="Destinatie" aria-describedby="basic-addon1">
                         </div>
                     </div>
-                    <div class="col-12 col-md-2 my-2">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-2 my-2">
                         <div class="input-group mb-3">
                             <span class="input-group-text py-2" id="basic-addon1"><span class="material-icons cl-purple">calendar_today</span></span>
                             <input type="text" class="form-control py-2" placeholder="De la" aria-label="De la" aria-describedby="basic-addon1">
                         </div>
                     </div>
-                    <div class="col-12 col-md-2 my-2">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-2 my-2">
                         <div class="input-group mb-3">
-                            <span class="input-group-text py-2" id="basic-addon1"><span class="material-icons cl-purple">date_range</span></span>
+                            <span class="input-group-text py-2" id="basic-addon1"><span class="material-icons cl-purple">calendar_today</span></span>
                             <input type="text" class="form-control py-2" placeholder="Pana la" aria-label="Pana la" aria-describedby="basic-addon1">
                         </div>
                     </div>
-                    <div class="col-12 col-md-2 my-2">
-                        <button type="submit" class="btn w-100 bg-red cl-white">Cauta</button>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-2 my-2">
+                        <a href="rezultate-cautare.html">
+                            <button type="submit" class="btn w-100 bg-red cl-white  d-flex align-items-center justify-content-center"><span class="material-icons material-icons-outlined pr-2">search</span>Cauta</button>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="d-flex align-items-center m-3 newsletter d-none">
+
+        <section class="d-flex align-items-center m-3 info">
+            <div class="container flex-wrap flex-md-nowrap">
+                <div class="row equal">
+                    <div class="col-12 col-md-4 col-lg-4 p-0">
+                        <a href="" class="d-flex align-items-center h-100 p-4 rounded shadow bg-white">
+                            <img src="./images/covid.svg" width="130" class="p-1 d-block d-md-none d-lg-block" />
+                            <div class="p-2">
+                                <h3 class="">Conditii de călătorie COVID</h3>
+                                <p>Află ce reguli de testare și carantină se aplică călătoriei tale.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4 p-0">
+                        <a href="" class="d-flex align-items-center h-100 my-3 my-md-0 mx-0 mx-md-3 p-4 rounded shadow bg-white">
+                            <img src="./images/partner.svg" width="150" class="p-1 d-block d-md-none d-lg-block" />
+                            <div class="p-2">
+                                <h3 class="">Devino partener</h3>
+                                <p>Suntem partenerii tai de incredere in oferirea celor mai bune servicii de transport.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4 p-0">
+                        <a href="" class="d-flex align-items-center h-100 p-4 rounded shadow bg-white">
+                            <img src="./images/newspaper.svg" width="150" class="p-1 d-block d-md-none d-lg-block" />
+                            <div class="p-2">
+                                <h3 class="">Aboneaza-te la newspaper</h3>
+                                <p>Fii primul care primește articole de călătorie direct în căsuța de e-mail.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="d-flex align-items-center m-3 share">
             <div class="container flex-wrap flex-md-nowrap p-4 rounded shadow bg-white">
-                <div class="row">
-                    <div class="col-12 col-md-12 text-center">
-                        <h3>Fii primul care primește articole, reduceri Bon Voyage și actualizări importante de călătorie, direct în căsuța de e-mail!</h3>
+                <div class="row d-flex align-items-center">
+                    <div class="col-12 col-md-3 text-center">
+                        <img src="./images/share.svg" width="200" />
                     </div>
-                    <div class="col-12 col-md-8 my-1">
-                        <div class="input-group">
-                            <span class="input-group-text py-2" id="basic-addon1"><span class="material-icons cl-purple">mail</span></span>
-                            <input type="text" class="form-control py-2" placeholder="Emailul tau" aria-label="Emailul tau" aria-describedby="basic-addon1">
+                    <div class="col-12 col-md-6">
+                        <h3 class="">Tu și prietenii tăi primiți fiecare câte 20 lei!</h3>
+                        <p>Bonusul de călătorie ce vă duce oriunde doriți.</p>
+                    </div>
+                    <div class="col-12 col-md-3 d-flex justify-content-start">
+                        <button type="submit" class="btn w-100 bg-red cl-white">Afla cum</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="d-flex align-items-center m-3 clients">
+            <div class="container flex-wrap flex-md-nowrap p-4 rounded shadow bg-white">
+                <div class="row d-flex align-items-center">
+                    <div class="col-12 col-md-12 px-3">
+                        <h3 class="">Ei au încredere în noi!</h3>
+                        <p>Companii de transport locale și internaționale au ales să-și ofere serviciile prin intermediul platformei Bon Voyage.</p>
+                    </div>
+                    <div class="col-12 col-md-12">
+                        <div class="row d-flex align-items-center justify-content-start">
+                            <div class="col-6 col-md-6 col-lg-2">
+                                <img src="./images/softrans.svg" class="w-100 p-3" />
+                            </div>
+                            <div class="col-6 col-md-6 col-lg-2">
+                                <img src="./images/flixbus.svg" class="w-100 p-3" />
+                            </div>
+                            <div class="col-6 col-md-6 col-lg-2">
+                                <img src="./images/national-express.svg" class="w-100 p-3" />
+                            </div>
+                            <div class="col-6 col-md-6 col-lg-2">
+                                <img src="./images/eurolines.svg" class="w-100 p-3" />
+                            </div>
+                            <div class="col-6 col-md-6 col-lg-2">
+                                <img src="./images/memento-bus.svg" class="w-100 p-3" />
+                            </div>
+                            <div class="col-6 col-md-6 col-lg-2">
+                                <img src="./images/cfr.svg" height="80" class="w-100 p-3" />
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-4 my-1">
-                        <button type="submit" class="btn w-100 bg-red cl-white">Aboneaza-te</button>
                     </div>
                 </div>
             </div>
@@ -140,19 +210,24 @@
         <div class="container-xxl flex-wrap flex-md-nowrap">
             <div class="row d-flex align-items-center m-0 px-0 py-5">
                 <div class="col-12 col-md-4 my-2">
-                    <img src="./images/logo.svg" height="40" class="favicon d-block" />
+                    <img src="./images/logo.svg" height="40" class="d-block" />
                     <button type="submit" class="btn btn-outline-primary d-block my-3">Ai nevoie de ajutor?</button>
+                    <a href="" class="py-2 px-0 d-flex align-items-center">
+                        <span class="material-icons material-icons-outlined">language</span>RO<span>
+                    </a>
                 </div>
                 <div class="col-12 col-md-4 my-2">
                     <h5 class="cl-red">Meniu</h5>
                     <a href="" class="d-block py-1">Cauta bilet</a>
                     <a href="" class="d-block py-1">Biletele tale</a>
                     <a href="" class="d-block py-1">Contul tau</a>
+                    <a href="" class="d-block py-1">Devino partener</a>
                 </div>
                 <div class="col-12 col-md-4 my-2">
                     <h5 class="cl-red">Companie</h5>
                     <a href="" class="d-block py-1">Termeni si conditii</a>
                     <a href="" class="d-block py-1">Confidentialitate</a>
+                    <a href="https://anpc.ro/" target="_blank" class="d-block py-1">ANPC</a>
                     <span class="d-block py-1">&copy; 2021 Tech Craft</span>
                 </div>
             </div>

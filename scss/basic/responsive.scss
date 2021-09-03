@@ -6,27 +6,25 @@
         @media (max-width: 1200px) {
             @content;
         }
-    }
-    @else if $point == medium {
+    } @else 
+    if $point == medium {
         @media (max-width: 992px) {
             @content;
         }
-    }
-    @else if $point == small {
+    } @else 
+    if $point == small {
         @media (max-width: 767px) {
             @content;
         }
-    }
-	@else if $point == extra-small {
+    } @else 
+    if $point == extra-small {
         @media (max-width: 480px) {
             @content;
         }
     }
 }
-
 /*@include bp(small) {
 }*/
-
 /*@media (max-width:767px) {
-    
+
 }*/
